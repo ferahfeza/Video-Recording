@@ -13,7 +13,7 @@ React ve Vite ile geliştirilmiş modern bir video kayıt uygulaması.
 
 ## Kurulum
 
-### Gereksinimler
+### Bağımlılıklar
 
 - Node.js (v18 veya üzeri)
 - npm veya yarn
