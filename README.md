@@ -1,130 +1,89 @@
-# Video Recording Demo
+# Video Kayıt Uygulaması
 
-A complete video recording web application built with React 19 and Vite, supporting real-time video/audio capture, playback, and download functionality.
+React ve Vite ile geliştirilmiş modern bir video kayıt uygulaması.
 
-## Overview
+## Özellikler
 
-This project demonstrates a modern approach to implementing video recording in web applications using React and the MediaRecorder API. The application provides an intuitive interface for capturing screen recordings with adjustable quality settings.
+- 🎥 **Gerçek Zamanlı Video Kayıt**: Kamera ve mikrofon kullanarak video kaydedin
+- 🎤 **Ses Kayıt Desteği**: Video ile birlikte ses kaydetme
+- ⏸️ **Duraklat/Devam Et**: Kayıt sırasında duraklatma ve devam ettirme
+- 💾 **Video İndirme**: Kaydedilen videoyu bilgisayarınıza indirin
+- ⏱️ **Kayıt Süresi Göstergesi**: Kayıt süresini gerçek zamanlı takip edin
+- 📱 **Responsive Tasarım**: Mobil ve masaüstü cihazlarda çalışır
 
-## Features
+## Kurulum
 
-### VideoRecorder Component
-- **MediaRecorder API Integration**
-  - Camera/microphone access via getUserMedia
-  - Screen recording with configurable bitrate
-  - Record, pause, resume, and stop controls
-  - Live preview during recording with visual indicator
-  - Recorded video playback and WebM download
-  - Real-time duration counter
-  - Permission and error state management
+### Bağımlılıklar
 
-### UI/UX
-- Responsive layout for mobile and desktop
-- Animated recording indicator with pulsing dot
-- Turkish localization for all UI text
-- Dark/light mode compatible styling
-- Quality presets: Low (1 Mbps), Medium (2.5 Mbps), High (5 Mbps)
+- Node.js (v18 veya üzeri)
+- npm veya yarn
 
-### Project Configuration
-- Vite build configuration for fast development
-- ESLint setup for code quality
-- Production build optimization
-- TypeScript for type safety
+### Adımlar
 
-## Setup
+1. Depoyu klonlayın:
+```bash
+git clone https://github.com/ferahfeza/Video-Recording.git
+cd Video-Recording
+```
 
-### Prerequisites
-- Node.js (version 14 or higher)
-- npm or yarn package manager
+2. Bağımlılıkları yükleyin:
+```bash
+npm install
+```
 
-### Installation
+3. Geliştirme sunucusunu başlatın:
+```bash
+npm run dev
+```
 
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/ferahfeza/Video-Recording.git
-   cd Video-Recording
-   ```
+4. Tarayıcınızda `http://localhost:5173` adresini açın
 
-2. Install dependencies:
-   ```sh
-   npm install
-   ```
+## Kullanım
 
-3. Start the development server:
-   ```sh
-   npm run dev
-   ```
+1. **Kamerayı Başlat** butonuna tıklayarak kamera ve mikrofon izinlerini verin
+2. **Kaydı Başlat** butonuna tıklayarak video kaydını başlatın
+3. İsterseniz **Duraklat** butonuyla kaydı duraklatabilirsiniz
+4. **Kaydı Durdur** butonuyla kaydı tamamlayın
+5. Kaydedilen videoyu önizleyin ve **Videoyu İndir** butonuyla indirin
+6. **Yeni Kayıt** butonuyla yeni bir kayıt başlatın
 
-4. Open [http://localhost:5173](http://localhost:5173) to view the app in your browser.
+## Üretim Derlemesi
 
-### Build for Production
+Üretim için optimize edilmiş bir derleme oluşturmak için:
 
-```sh
+```bash
 npm run build
 ```
 
-The built files will be in the `dist` directory.
+Derlenen dosyalar `dist/` klasöründe oluşturulur.
 
-### Preview Production Build
+Derlenmiş uygulamayı önizlemek için:
 
-```sh
+```bash
 npm run preview
 ```
 
-## Browser Support
+## Teknolojiler
 
-This application requires modern browsers with MediaRecorder API support:
-- Chrome/Edge (recommended)
+- **React 19**: Kullanıcı arayüzü için
+- **Vite**: Hızlı geliştirme ve derleme için
+- **MediaRecorder API**: Video ve ses kayıt için
+- **getUserMedia API**: Kamera ve mikrofon erişimi için
+
+## Tarayıcı Desteği
+
+Bu uygulama modern tarayıcılarda çalışır:
+- Chrome/Edge (önerilen)
 - Firefox
-- Safari 14.3+
+- Safari (iOS 14.3+)
+- Opera
 
-**Important:** HTTPS is required in production for camera/screen access due to browser security policies.
+**Not**: Kamera ve mikrofon erişimi için HTTPS gereklidir (localhost hariç).
 
-## Technologies Used
+## Lisans
 
-- **React 18.2** - UI library
-- **TypeScript 5.0** - Type safety
-- **Vite 7.2** - Build tool and development server
-- **react-media-recorder 1.7** - MediaRecorder wrapper library
+MIT
 
-## Project Structure
+## Katkıda Bulunma
 
-```
-Video-Recording/
-├── src/
-│   ├── App.tsx          # Main application component
-│   ├── RecordView.tsx   # Video recording component
-│   └── main.tsx         # Application entry point
-├── index.html           # HTML template
-├── package.json         # Project dependencies
-├── tsconfig.json        # TypeScript configuration
-└── vite.config.ts       # Vite configuration
-```
-
-## Usage
-
-1. Select your desired video quality from the dropdown menu
-2. Click "Start Recording" to begin screen capture
-3. Select the screen/window you want to record
-4. Click "Stop Recording" when finished
-5. The recorded video will appear below with playback controls
-6. Use the video controls to review or download your recording
-
-## Development
-
-This project uses:
-- **Vite** for fast development and hot module replacement
-- **TypeScript** for type checking and better developer experience
-- **ESLint** for code quality and consistency
-
-## License
-
-This project is open source and available for use and extension as needed.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
----
-
-Built with ❤️ using React and Vite
+Katkılarınızı bekliyoruz! Pull request göndermekten çekinmeyin.
