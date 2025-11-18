@@ -69,6 +69,7 @@ npm run preview
 - **Vite**: Hızlı geliştirme ve derleme için
 - **MediaRecorder API**: Video ve ses kayıt için
 - **getUserMedia API**: Kamera ve mikrofon erişimi için
+- **[react-media-recorder](https://www.npmjs.com/package/react-media-recorder)**: React ile kolay medya kaydı için kullanılan yardımcı paket
 
 ## Tarayıcı Desteği
 
